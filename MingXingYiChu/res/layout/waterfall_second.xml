@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        >
+
+       
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/LinearLayout_temp" >
+				 <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/second_imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_launcher" />
+
+                    <ImageView
+                        android:id="@+id/second_imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/second_imageView1"
+                        android:src="@drawable/ic_launcher" />
+
+                    <ImageView
+                        android:id="@+id/second_imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/second_imageView2"
+                        android:layout_toRightOf="@+id/second_imageView2"
+                        android:src="@drawable/list_icon_link" />
+
+                    <TextView
+                        android:id="@+id/second_textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/second_imageView3"
+                        android:layout_toRightOf="@+id/second_imageView3"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/second_textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/second_textView2"
+                        android:layout_alignLeft="@+id/second_textView2"
+                        android:text="TextView" />
+
+                    <Button
+                        android:id="@+id/second_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/second_textView2"
+                        android:layout_alignBottom="@+id/second_textView2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="0"
+                        android:drawableTop="@drawable/postdetail_like_button" />
+
+                    <Button
+                        android:id="@+id/second_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/second_textView1"
+                        android:layout_toLeftOf="@+id/second_button2"
+                        android:text="0"
+                        android:drawableTop="@drawable/list_icon_comment" />
+
+                    <TextView
+                        android:id="@+id/second_textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/second_button1"
+                        android:text="TextView" />
+                </RelativeLayout>
+                
+                
+            </ScrollView>
+       
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:id="@+id/second_bottom_imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="61dp"
+                android:src="@drawable/topic_detail_line_dashed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#cccccc" >
+
+                <RelativeLayout
+                    android:id="@+id/second_bottom_RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/second_bottom_imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/postdetail_like_button" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/second_bottom_imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/second_bottom_imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+       
+    </LinearLayout>
+   </RelativeLayout>
+    

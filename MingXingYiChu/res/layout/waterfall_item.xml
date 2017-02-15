@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/waterfall_item_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/waterfall_item_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+    android:id="@+id/waterfall_item_button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button" />
+
+	<Button
+    android:id="@+id/waterfall_item_button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button" />
+</LinearLayout>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+<ImageView
+    android:id="@+id/waterfall_item_imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/postdetail_like_button" />
+
+<TextView
+    android:id="@+id/waterfall_item_textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/waterfall_item_imageView2"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/waterfall_item_textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/waterfall_item_textView2"
+    android:layout_toRightOf="@+id/waterfall_item_imageView2"
+    android:text="TextView" />
+</RelativeLayout>
+
+
+</LinearLayout>
